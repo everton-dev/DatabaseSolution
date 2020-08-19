@@ -1,0 +1,48 @@
+﻿using System;
+using System.Data;
+using DatabaseSolution.Generics.Enums;
+
+namespace DatabaseSolution.Generics
+{
+    public class DatabaseMySql : Database
+    {
+        public DatabaseMySql(string connectionString) : base(connectionString)
+        {
+        }
+
+        public override void AddParameter(string parameterName, object value)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void CloseConnection()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Execute(string textCommand, eExecutionType executionType)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override DataTable ExecuteProcedure(string procedureName)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void ExecuteProcedureWithoutReturn(string procedureName)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void OpenConnection()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override DataTable Query(string textCommand, eExecutionType executionType)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}
