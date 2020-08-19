@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DatabaseSolution.Generics.Factory
+﻿namespace DatabaseSolution.Generics.Factory
 {
     public sealed class DatabaseFactory : DatabaseAbstractFactory
     {
