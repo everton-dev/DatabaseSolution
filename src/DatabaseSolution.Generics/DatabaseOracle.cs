@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using DatabaseSolution.Generics.Enums;
 
@@ -30,6 +31,11 @@ namespace DatabaseSolution.Generics
             throw new NotImplementedException();
         }
 
+        public override IEnumerable<T> ExecuteProcedure<T>(string procedureName)
+        {
+            throw new NotImplementedException();
+        }
+
         public override void ExecuteProcedureWithoutReturn(string procedureName)
         {
             throw new NotImplementedException();
@@ -41,6 +47,11 @@ namespace DatabaseSolution.Generics
         }
 
         public override DataTable Query(string textCommand, eExecutionType executionType)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override IEnumerable<T> Query<T>(string textCommand, eExecutionType executionType)
         {
             throw new NotImplementedException();
         }
